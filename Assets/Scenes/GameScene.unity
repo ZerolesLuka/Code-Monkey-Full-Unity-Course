@@ -1289,6 +1289,7 @@ Transform:
   - {fileID: 1579064957}
   - {fileID: 1240015171}
   - {fileID: 955571571}
+  - {fileID: 1842034888}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1228441482 stripped
@@ -1364,11 +1365,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1199833026}
     m_Modifications:
+    - target: {fileID: 521141698278126785, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
+      propertyPath: burningRecipeSOArray.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521141698278126785, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
+      propertyPath: 'burningRecipeSOArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ac0315eed0e3aee438b802cd93adf269, type: 2}
     - target: {fileID: 1231543982843472488, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
       propertyPath: m_Name
       value: StoveCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152072260437853263, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8515808685549744229, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1388,15 +1401,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8515808685549744229, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8515808685549744229, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8515808685549744229, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8515808685549744229, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2426,6 +2439,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5840068477320668125, guid: 2e5be2eb89611ea4baf6a8d047cb81da, type: 3}
   m_PrefabInstance: {fileID: 1611854519}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1842034888 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8515808685549744229, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
+  m_PrefabInstance: {fileID: 1295801252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1919450013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6060834264980682847, guid: fbe5050d700d91443baed1a4683ce0c3, type: 3}
@@ -2781,4 +2799,3 @@ SceneRoots:
   - {fileID: 1331896488}
   - {fileID: 1981785579}
   - {fileID: 1199833026}
-  - {fileID: 1295801252}
