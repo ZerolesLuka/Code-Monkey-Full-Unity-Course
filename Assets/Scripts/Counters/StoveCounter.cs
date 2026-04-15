@@ -1,10 +1,67 @@
+using System.Collections;
 using UnityEngine;
 using static CuttingCounter;
 
 public class StoveCounter : BaseCounter
 {
+    private enum State
+    {
+        Idle,
+        Frying,
+        Fried,
+        Burned,
+    }
     [SerializeField] private FryingRecipeSO[] fryingRecipeSOArray;
-    
+
+    /*private void Start() //couroutine stuff
+    {
+        StartCoroutine(HandleFryTimer());
+    }
+    private IEnumerator HandleFryTimer(){
+        yield return new WaitForSeconds(1f);
+    }*/
+    private State state;
+    private float fryingTimer;
+    private FryingRecipeSO fryingRecipeSO;
+
+    private void Start()
+    {
+        state = State.Idle;
+    }
+
+    private void Update()
+    {
+        if (HasKitchenObject())
+        {
+            switch (state)
+            {
+                case State.Idle:
+                    break;
+                case State.Frying:
+
+
+                    fryingTimer += Time.deltaTime; //if there is something on the stove, start the timer
+
+                    if (fryingTimer > fryingRecipeSO.fryingTimerMax)
+                    {
+                        //Fried the object
+
+                        GetKitchenObject().DestroySelf(); //destroy the object on the stove
+
+                        KitchenObject.SpawnKitchenObject(fryingRecipeSO.output, this); //spawn the output of the recipe on the stove
+
+                        state = State.Fried; //change state to fried
+                    }
+
+                    break;
+                case State.Fried:
+                    break;
+                case State.Burned:
+                    break;
+            }
+        }
+
+    }
     public override void Interact (Player player)
     {
         if (!HasKitchenObject())
@@ -17,6 +74,10 @@ public class StoveCounter : BaseCounter
                     //Player carrying something that can be cut
                     player.GetKitchenObject().SetKitchenObjectParent(this); //if player is carrying something, then put it on the counter and set parent to counter
 
+                    fryingRecipeSO = GetFryingRecipeSOWithInput(GetKitchenObject().GetKitchenObjectSO()); //get the recipe for the object on the stove
+
+                    state = State.Frying;
+                    fryingTimer = 0f; //reset the timer
                 }
             }
             else
