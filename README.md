@@ -1,2 +1,2 @@
 # Code Monkey Unity Full Course
-Learning the foundations of Unity before trying to make my dream game.
+Learning the foundations of Unity before trying to make my dream game. Hopefully this finds someone, it is Apr 13 2026 and I am wrapping up grade 10. I am doing this course to broaden my knowledge of unity since most of my game is already planned out. I am about 1/2 through the course and forgot about the readme so apologies about that, not sure if that shows anywhere... My game Rollin Robbers is pretty much finalized, down to the core mechanics, art style, core systems, as well as some character sketches. I am excited for the journey I have up ahead.
