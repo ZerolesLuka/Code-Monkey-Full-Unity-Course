@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class StoveCounterVisual : MonoBehaviour
 {
-    [SerializeField] private StoveCounter stoveCounter;
-    [SerializeField] private GameObject stoveOnGameObject;
-    [SerializeField] private GameObject particlesGameObject;
+    [SerializeField] private StoveCounter stoveCounter; //stove
+    [SerializeField] private GameObject stoveOnGameObject; //stove on
+    [SerializeField] private GameObject particlesGameObject; //stove particles
 
     private void Start()
     {
@@ -15,8 +15,8 @@ public class StoveCounterVisual : MonoBehaviour
 
     private void StoveCounter_OnStateChanged(object sender, StoveCounter.OnStateChangedEventArgs e)
     {
-        bool showVisual = e.state == StoveCounter.State.Frying || e.state == StoveCounter.State.Fried;
-        stoveOnGameObject.SetActive(showVisual);
-        particlesGameObject.SetActive(showVisual);
+        bool showVisual = e.state == StoveCounter.State.Frying || e.state == StoveCounter.State.Fried; //sets bool active if these states are active
+        stoveOnGameObject.SetActive(showVisual); //bool is used as parameter to set active or inactive
+        particlesGameObject.SetActive(showVisual); //bool is used as parameter to set active or inactive
     }
 }

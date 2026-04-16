@@ -447,6 +447,10 @@ PrefabInstance:
       propertyPath: cuttingCounter
       value: 
       objectReference: {fileID: 676093158267567188}
+    - target: {fileID: 4837673053317454427, guid: 6a57d000322199c408c3035cb07db272, type: 3}
+      propertyPath: hasProgressGameObject
+      value: 
+      objectReference: {fileID: 7683505958694743555}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

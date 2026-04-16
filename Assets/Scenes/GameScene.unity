@@ -1379,9 +1379,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoveCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 2015446402555960241, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.602
+      objectReference: {fileID: 0}
     - target: {fileID: 3152072260437853263, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4772516179607414130, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
+      propertyPath: mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8515808685549744229, guid: 0aa0dcb5ead736b4e9af28c4d2d2a147, type: 3}
       propertyPath: m_LocalPosition.x
