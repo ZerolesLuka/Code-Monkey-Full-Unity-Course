@@ -145,7 +145,10 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         isWalking = moveDir != Vector3.zero; // moving = true & not = false animation bs
         
         float rotateSpeed = 10f; //roation of player
-        transform.forward = Vector3.Slerp(transform.forward, moveDir, Time.deltaTime * rotateSpeed); //rotation
+        if (IsWalking())
+        {
+            transform.forward = Vector3.Slerp(transform.forward, moveDir, Time.deltaTime * rotateSpeed); //rotation
+        }
     }
 
     private void SetSelectedCounter(BaseCounter selectedCounter)//()brackets mean basically you're gonna need this information, use it in the function
