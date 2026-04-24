@@ -16,6 +16,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     [SerializeField]private GameInput gameInput; //refers to the Game Input
     [SerializeField]private LayerMask countersLayerMask; //layer mask for the raycast to hit the counters ONLY
     [SerializeField] private Transform kitchenObjectHoldPoint; //where the kitchen object will be on the counter
+    [SerializeField] private GameObject playerHands; //reference to the player's hands, which will be shown when the player is holding a kitchen object and hidden when they are not
 
     private bool isWalking;
     private Vector3 lastInteractDir; //allows you to interact even if you are not pressing a movement key
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     {
         HandleMovement(); //handles movement and animation
         HandleInteractions(); //handles raycast and interaction with counters
+        ShowHands();
     }
     public bool IsWalking()
     {
@@ -159,6 +161,18 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         {
             selectedCounter = selectedCounter//sets the event args to the counter we just selected
         });
+    }
+
+    private void ShowHands()
+    {
+        if(HasKitchenObject())
+        {
+            playerHands.gameObject.SetActive(true);
+        }
+        else
+        {
+            playerHands.gameObject.SetActive(false);
+        }
     }
 
     public Transform GetKitchenObjectFollowTransform()
