@@ -14,22 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1777155660
+  lastShownTimestamp: 1777402904
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1777155660
+  checkedLastUpdateTimestamp: 1777402904
   lastQOTDResponse:
-    questionId: 295
-    questionText: Which of these are affected when you modify Time.timeScale?
-    answerA: Time.deltaTime, Time.realtimeSinceStartup, Time.unscaledDeltaTime, Time.timeSinceLevelLoad,
-      Time.fixedTime
-    answerB: Time.deltaTime, Time.realtimeSinceStartup, Time.timeSinceLevelLoad,
-      Time.fixedTime
-    answerC: Time.deltaTime, Time.timeSinceLevelLoad, Time.fixedTime
+    questionId: 296
+    questionText: When you create a new script, do you always have to extend MonoBehaviour?
+    answerA: Yes
+    answerB: No
+    answerC: Only if you want to use it as a Game Object Component
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1777155660
+  lastQotdTimestamp: 1777402904
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/codeMonkeyToolkit50Off.png
     topText: My Toolkit is 50% OFF! 40+ Tools and Elements to help you make games
@@ -37,19 +35,19 @@ MonoBehaviour:
     topLink: toolkit
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1777155660
+  lastDynamicHeaderTimestamp: 1777402904
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1777155660
+  websiteLatestMessageTimestamp: 1777402904
   websiteLatestVideos:
     videos:
+    - youTubeId: XB7b4EXfjgM
+      title: What do YOU consider SUCCESS?
     - youTubeId: LDgPyFmlsSI
       title: 8 QUICK Game Dev Tips for SUCCESS!
     - youTubeId: ylSRo2_ddMw
       title: TOP 10 NEW Systems and Tools APRIL 2026! | Unity Asset Store
     - youTubeId: uPVKcI0IDVc
       title: Is Game Dev Advice CONTRADICTORY?
-    - youTubeId: B82lo8t4IHs
-      title: TOP 10 FREE NEW Assets APRIL 2026!
-  websiteLatestVideosTimestamp: 1777155660
+  websiteLatestVideosTimestamp: 1777402904
