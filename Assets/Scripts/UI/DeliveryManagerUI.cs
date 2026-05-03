@@ -40,6 +40,7 @@ public class DeliveryManagerUI : MonoBehaviour
         {
             Transform recipeTransform = Instantiate(recipeTemplate, container);
             recipeTransform.gameObject.SetActive(true); //turn on the recipe template
+            recipeTransform.GetComponent<DeliveryManagerSingleUI>().SetRecipeSO(recipeSO); //set the recipeSO of the recipe template to the current recipeSO in the loop
         }
 
     }
