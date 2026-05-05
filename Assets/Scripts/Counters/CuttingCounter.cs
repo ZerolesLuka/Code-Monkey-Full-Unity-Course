@@ -3,9 +3,8 @@ using UnityEngine;
 
 public class CuttingCounter : BaseCounter, IHasProgress
 {
+    public static event EventHandler OnAnyCut; //static event that can be listened to by any script, invoked when any cutting counter is cut    
     public event EventHandler<IHasProgress.OnProgressChangedEventArgs> OnProgressChanged;
-
-
     public event EventHandler OnCut;
 
     [SerializeField] private CuttingRecipeSO[] cuttingRecipeSOArray; //array of all the possible cutting recipes
@@ -76,6 +75,7 @@ public class CuttingCounter : BaseCounter, IHasProgress
             cuttingProgress++;
 
             OnCut?.Invoke(this, EventArgs.Empty);
+            OnAnyCut?.Invoke(this, EventArgs.Empty);
 
             CuttingRecipeSO cuttingRecipeSO = GetCuttingRecipeSOWithInput(GetKitchenObject().GetKitchenObjectSO()); //if there is a recipe for the input, return true
 

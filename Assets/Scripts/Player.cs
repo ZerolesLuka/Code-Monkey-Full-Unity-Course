@@ -6,6 +6,8 @@ public class Player : MonoBehaviour, IKitchenObjectParent
 {
     public static Player Instance { get; private set; } //singleton for player you're able to reference it anywhere and only one can exist, if you try to make another one it will give you an error in the console
 
+    public event EventHandler OnPickedSomething;
+    
     public event EventHandler <OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged; //<> means youll need this when you call the event handler, the event handler is called when we select a counter and it will pass the counter we selected to whatever is listening to the event handler
     public class OnSelectedCounterChangedEventArgs : EventArgs //makes a class of info we can use when we call the event handler, in this case it is the counter we selected
     {
@@ -183,6 +185,10 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     public void SetKitchenObject(KitchenObject kitchenObject)
     {
         this.kitchenObject = kitchenObject;//sets the kitchen object on the counter to the kitchen object passed in
+        if(kitchenObject != null)
+        {
+            OnPickedSomething?.Invoke(this, EventArgs.Empty); //calls the event handler for picking something up, which will update the UI
+        }
     }
 
     public KitchenObject GetKitchenObject()
