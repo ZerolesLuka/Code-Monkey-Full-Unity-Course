@@ -14,34 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1778267962
+  lastShownTimestamp: 1778356729
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1778267962
+  checkedLastUpdateTimestamp: 1778356729
   lastQOTDResponse:
-    questionId: 299
-    questionText: 'Does this variable get reset when you load a different Scene?
+    questionId: 300
+    questionText: 'Does this code compile?
 
-      <p>private
-      static int score;</p>'
-    answerA: Yes
-    answerB: No
-    answerC: Only when loading the Main Menu
+      <p>private void SetTarget(Transform
+      target) {</p>
+
+      <p>&nbsp; &nbsp; GameObject targetGameObject = target;</p>
+
+      <p>}</p>'
+    answerA: No
+    answerB: Yes
+    answerC: Yes if target is not null
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1778267962
+  lastQotdTimestamp: 1778356729
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/gameDevPracticeLab_2.png
     topText: Weekly Game Mechanic Challenges to help you learn by DOING!
     topLink: practicelab
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1778267962
+  lastDynamicHeaderTimestamp: 1778356729
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1778267962
+  websiteLatestMessageTimestamp: 1778356729
   websiteLatestVideos:
     videos:
     - youTubeId: 546J2n9Sn5o
@@ -52,4 +56,4 @@ MonoBehaviour:
       title: What I DON'T want to happen to YOU!
     - youTubeId: 2gP-2rQ3o_Q
       title: This Tool FIXES your Unity Project!
-  websiteLatestVideosTimestamp: 1778267962
+  websiteLatestVideosTimestamp: 1778356729
