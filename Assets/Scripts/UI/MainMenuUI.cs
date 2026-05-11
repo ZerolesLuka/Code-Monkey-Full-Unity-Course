@@ -19,7 +19,7 @@ public class MainMenuUI : MonoBehaviour
             //click code...
             Application.Quit();
         });
-
+        Time.timeScale = 1f;
     }
 
     /*private void PlayClick()

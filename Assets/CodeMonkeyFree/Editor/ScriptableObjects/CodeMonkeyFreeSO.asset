@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1778356729
+  lastShownTimestamp: 1778443342
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1778356729
+  checkedLastUpdateTimestamp: 1778443342
   lastQOTDResponse:
     questionId: 300
     questionText: 'Does this code compile?
@@ -34,26 +34,27 @@ MonoBehaviour:
     answerC: Yes if target is not null
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1778356729
+  lastQotdTimestamp: 1778443342
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/gameDevPracticeLab_2.png
     topText: Weekly Game Mechanic Challenges to help you learn by DOING!
     topLink: practicelab
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1778356729
+  lastDynamicHeaderTimestamp: 1778443342
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1778356729
+  websiteLatestMessageTimestamp: 1778443342
   websiteLatestVideos:
     videos:
+    - youTubeId: _7ACFqhnxTw
+      title: FREE Game Dev Mechanic Challenges! Traffic System and Keypad Access
+        (Learn by DOING!)
     - youTubeId: 546J2n9Sn5o
       title: The MOST AWESOME Unity Bundle is HERE! 94% OFF!
     - youTubeId: _WB6Ui5XeH0
       title: The 10 SECRETS to making BETTER games!
     - youTubeId: Hg5u-qEIoDo
       title: What I DON'T want to happen to YOU!
-    - youTubeId: 2gP-2rQ3o_Q
-      title: This Tool FIXES your Unity Project!
-  websiteLatestVideosTimestamp: 1778356729
+  websiteLatestVideosTimestamp: 1778443342

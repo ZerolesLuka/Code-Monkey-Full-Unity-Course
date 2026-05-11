@@ -5,8 +5,13 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent
 {
     public static event EventHandler OnAnyObjectPlacedHere; 
     [SerializeField] private Transform counterTopPoint;
-    
-    
+
+    public static void ResetStaticData() //resets the static event data, called when the game is reset
+    {
+        OnAnyObjectPlacedHere = null;
+    }
+
+
     private KitchenObject kitchenObject;
 
 

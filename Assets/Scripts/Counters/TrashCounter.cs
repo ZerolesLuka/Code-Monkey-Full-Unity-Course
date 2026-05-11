@@ -4,6 +4,10 @@ using UnityEngine;
 public class TrashCounter : BaseCounter
 {
     public static event EventHandler OnAnyObjectTrashed; //static event that can be listened to by any script, invoked when any object is trashed   
+   new  public static void ResetStaticData() //resets the static event data, called when the game is reset
+    {
+        OnAnyObjectTrashed = null;
+    }
 
     public override void Interact(Player player)
     {

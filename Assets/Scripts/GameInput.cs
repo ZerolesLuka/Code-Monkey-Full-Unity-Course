@@ -12,7 +12,7 @@ public class GameInput : MonoBehaviour
 
 
     private PlayerInputActions playerInputActions;
-        private void Awake()
+    private void Awake()
     {
 
         Instance = this;
@@ -24,6 +24,16 @@ public class GameInput : MonoBehaviour
         playerInputActions.Player.Pause.performed += Pause_performed;
 
     }
+
+    private void OnDestroy() //when object destroyed, unsub, and dispose of actions since will cause error if we don't
+    {
+        playerInputActions.Player.Interact.performed -= Interact_performed;
+        playerInputActions.Player.InteractAlternate.performed -= InteractAlternate_performed;
+        playerInputActions.Player.Pause.performed -= Pause_performed;
+        
+        playerInputActions.Dispose();
+    }
+
 
     private void Pause_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {

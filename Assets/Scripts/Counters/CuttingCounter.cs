@@ -4,6 +4,12 @@ using UnityEngine;
 public class CuttingCounter : BaseCounter, IHasProgress
 {
     public static event EventHandler OnAnyCut; //static event that can be listened to by any script, invoked when any cutting counter is cut    
+    
+    new public static void ResetStaticData() //resets the static event data, called when the game is reset
+    {
+        OnAnyCut = null;
+    }
+
     public event EventHandler<IHasProgress.OnProgressChangedEventArgs> OnProgressChanged;
     public event EventHandler OnCut;
 
