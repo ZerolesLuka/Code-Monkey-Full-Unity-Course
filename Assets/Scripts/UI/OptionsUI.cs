@@ -10,8 +10,22 @@ public class OptionsUI : MonoBehaviour
     [SerializeField] private Button soundEffectsButton;
     [SerializeField] private Button musicButton;
     [SerializeField] private Button closeButton;
+    [SerializeField] private Button moveUpButton;
+    [SerializeField] private Button moveDownButton;
+    [SerializeField] private Button moveLeftButton;
+    [SerializeField] private Button moveRightButton;
+    [SerializeField] private Button intButton;
+    [SerializeField] private Button altButton;
+    [SerializeField] private Button pauseButton;
     [SerializeField] private TextMeshProUGUI soundEffectsText;
     [SerializeField] private TextMeshProUGUI musicText;
+    [SerializeField] private TextMeshProUGUI upText;
+    [SerializeField] private TextMeshProUGUI downText;
+    [SerializeField] private TextMeshProUGUI leftText;
+    [SerializeField] private TextMeshProUGUI rightText;
+    [SerializeField] private TextMeshProUGUI intText;
+    [SerializeField] private TextMeshProUGUI altText;
+    [SerializeField] private TextMeshProUGUI pauseText;
 
     private void Awake()
     {
@@ -43,13 +57,15 @@ public class OptionsUI : MonoBehaviour
 
     private void GameHandler_OnGameUnpaused(object sender, System.EventArgs e)
     {
-        Hide();
+        Hide(); 
     }
 
     private void UpdateVisual()
     { 
         soundEffectsText.text = "Sound Effects : " + Mathf.Round(SoundManager.Instance.GetVolume() * 10f).ToString();
         musicText.text = "Music : " + Mathf.Round(MusicManager.Instance.GetVolume() * 10f).ToString();
+
+        moveUpText.text
 
     }
 
