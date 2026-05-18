@@ -46,6 +46,10 @@ public class OptionsUI : MonoBehaviour
         {
             Hide();
         });
+        moveUpButton.onClick.AddListener(() =>
+        {
+
+        });
     }
 
     private void Start()
@@ -65,8 +69,13 @@ public class OptionsUI : MonoBehaviour
         soundEffectsText.text = "Sound Effects : " + Mathf.Round(SoundManager.Instance.GetVolume() * 10f).ToString();
         musicText.text = "Music : " + Mathf.Round(MusicManager.Instance.GetVolume() * 10f).ToString();
 
-        moveUpText.text
-
+        upText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Move_Up);
+        downText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Move_Down);
+        leftText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Move_Left);
+        rightText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Move_Right);
+        intText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Interact);
+        altText.text = GameInput.Instance.GetBindingText(GameInput.Binding.InteractAlternate);
+        pauseText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Pause);
     }
 
     public void Show()
